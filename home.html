@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./hmoe.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- data aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="btn-gotop" class="hidden gotop rounded-circle d-flex justify-content-center align-items-center"
+    onclick="Gotop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light position-fixed top-0 w-100" style="z-index: 9999">
+    <div class="container-xl">
+      <a class="navbar-brand d-flex align-items-center justify-content-between" href="#">
+        <img class="h-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/logo.png" alt="" />
+        <div class="h3 w-100 mb-0">FlexStart</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-xl-auto mb-2 mb-lg-0 w-75 justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ctc1" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ctc1" href="#servics">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ctc1" href="#PORTFOLIO">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ctc1" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ctc1" href="#BLOG">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ctc1" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item ctc1" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item ctc1" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item ctc1" href="# ctc1">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ctc1" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Mega Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item ctc1" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item ctc1" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item ctc1" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ctc1" href="#contact">contact</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button type="button" class="btn cbgc2 text-light p-1 ps-3 pe-3 h-100%">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="hero" class="w-100  section-1 d-flex justify-content-center align-items-center ">
+    <div class="container">
+      <div class="w-100 d-flex row mt-5 m-auto">
+        <div class="col-lg-6 pt-5 col-12">
+          <div class="w-100 p-2 text-light">
+            <div class="w-100">
+              <div class="w-100 ctc1 h1 lh-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                We offer modern solutions for growing your business
+              </div>
+              <div class="w-100 text-secondary h3 mt-5" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="300">
+                We are team of talented designers making websites with
+                Bootstrap
+              </div>
+              <button type="button" class="btn cbgc2 text-light ps-5 pe-5 pt-2 pb-2 text-capitalize h4"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                get started
+                <i class="fa-solid fa-arrow-right ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-5 col-12 p-0 d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1400">
+          <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png" class="w-100" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-2 pt-5  w-100 mb-5">
+    <div class="container m-auto row d-flex pt-5 justify-content-center align-items-center">
+      <div class="col-lg-6 p-0 col-12 ghostwhite" data-aos="fade-up" data-aos-duration="1000">
+        <div class="w-100 p-2 h-100 text-light">
+          <div class="w-100 ">
+            <div class="w-100 ctc2">WHO WE ARE</div>
+            <div class="w-100 ctc1 h3 lh-1">
+              Expedita voluptas omnis cupiditate totam eveniet nobis sint
+              iste. Dolores est repellat corrupti reprehenderit.
+            </div>
+            <div class="w-100 text-secondary h5 mb-5 mt-5 lh-1">
+              Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt
+              et. Inventore et et dolor consequatur itaque ut voluptate sed
+              et. Magnam nam ipsum tenetur suscipit voluptatum nam et est
+              corrupti.
+            </div>
+            <button type="button" class="btn cbgc2 text-light ps-5 pe-5 pt-2 pb-2 text-capitalize h4">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 p-0 col-12" data-aos="zoom-out" data-aos-duration="1000">
+        <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/about.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3 w-100 pt-5">
+    <div class="container">
+      <div class="w-100">
+        <div class="m-auto w-25 text-center ctc2" data-aos="fade-up" data-aos-duration="1000">OUR VALUES</div>
+        <div class="w-100 h1 ctc1 fw-bolder text-center" data-aos="fade-up" data-aos-duration="1000">
+          Odit est perspiciatis laborum et dicta
+        </div>
+      </div>
+      <div class="w-100 d-flex mt-4 justify-content-sm-between align-items-center">
+        <div class="w-100 row m-auto">
+          <div class="col-12 col-lg-4 p-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="w-100 h-100 shadow-sm">
+              <div class="w-100 d-flex justify-content-center align-items-center">
+                <img class="w-75" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/values-1.png"
+                  alt="" />
+              </div>
+              <div class="w-100 ctc1 text-center h4 mt-3 mb-3">
+                Ad cupiditate sed est odio
+              </div>
+              <div class="w-100 text-dark text-center h6 ps-5 pe-5 mt-3 mb-4">
+                Eum ad dolor et. Autem aut fugiat debitis voluptatem
+                consequuntur sit. Et veritatis id.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="w-100 h-100 shadow-sm">
+              <div class="w-100 d-flex justify-content-center align-items-center">
+                <img class="w-75" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/values-2.png"
+                  alt="" />
+              </div>
+              <div class="w-100 ctc1 text-center h4 mt-3 mb-3">
+                Voluptatem voluptatum alias
+              </div>
+              <div class="w-100 text-dark text-center h6 ps-5 pe-5 mt-3 mb-4">
+                Repudiandae amet nihil natus in distinctio suscipit id.
+                Doloremque ducimus ea sit non.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 p-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="w-100 h-100 shadow-sm">
+              <div class="w-100 d-flex justify-content-center align-items-center">
+                <img class="w-75" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/values-3.png"
+                  alt="" />
+              </div>
+              <div class="w-100 ctc1 text-center h4 mt-3 mb-3">
+                Fugit cupiditate alias nobis.
+              </div>
+              <div class="w-100 text-dark text-center h6 mt-3 mb-4">
+                Quam rem vitae est autem molestias explicabo debitis sint.
+                Vero aliquid quidem commodi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-4 w-100">
+    <div class="container">
+      <div class="w-100 row m-auto">
+        <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="w-100 p-4 shadow d-flex justify-content-center align-items-center h-100 bg-white">
+            <div class="w-100 d-flex align-items-center">
+              <i class="fa-regular fa-face-smile ctc1 h1"></i>
+              <div class="ms-3">
+                <div class="w-100 h2 ctc1">232</div>
+                <div class="w-100 text-center">Happy Clients</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="w-100 h-100 shadow d-flex justify-content-center align-items-center p-4 border bg-white">
+            <div class="w-100 d-flex align-items-center">
+              <i class="bi bi-journal-richtext h1 text-warning"></i>
+              <div class="ms-3">
+                <div class="w-100 h2 ctc1">521</div>
+                <div class="w-100 text-center">Projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="w-100 h-100 shadow d-flex justify-content-center align-items-center p-4 border bg-white">
+            <div class="w-100 d-flex align-items-center">
+              <i class="bi bi-headset text-success h1"></i>
+              <div class="ms-3">
+                <div class="w-100 h2 ctc1">1463</div>
+                <div class="w-100 text-center">Hours Of Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="w-100 h-100 shadow d-flex justify-content-center align-items-center p-4 border bg-white">
+            <div class="w-100 d-flex align-items-center">
+              <i class="bi bi-people text-danger h1"></i>
+              <div class="ms-3">
+                <div class="w-100 h2 ctc1">15</div>
+                <div class="w-100 text-center">Hard Workers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-5 w-100 mt-5 pt-5">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      <div class="w-100 text-center ctc1">FEATURES</div>
+      <div class="w-100 text-center h1 fw-bold">
+        Laboriosam et omnis fuga quis dolor direda fara
+      </div>
+      <div class="row w-100">
+        <div class="col-lg-6 col-12">
+          <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/features.png" class="w-100" alt="" />
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="row w-100">
+            <div class="col-12 col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100">
+              <div class="m-3 shadow p-3 w-100 feature-box d-flex align-items-center FEATURES-chake">
+                <i class="bi bi-check h4 text-dark p-2 cbglw rounded pt-1 pb-1 m-0"></i>
+                <div class="ctc1 fw-bolder h6 p-0 ms-2 m-0">
+                  Eos aspernatur rem
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300">
+              <div class="m-3 shadow p-3 w-100 feature-box d-flex align-items-center FEATURES-chake">
+                <i class="bi bi-check h4 text-dark p-2 cbglw rounded pt-1 pb-1 m-0"></i>
+                <div class="ctc1 fw-bolder h6 p-0 ms-2 m-0">
+                  Facilis neque ipsa
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100">
+              <div class="m-3 shadow p-3 w-100 feature-box d-flex align-items-center FEATURES-chake">
+                <i class="bi bi-check h4 text-dark p-2 cbglw rounded pt-1 pb-1 m-0"></i>
+                <div class="ctc1 fw-bolder h6 p-0 ms-2 m-0">
+                  Volup amet voluptas
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300">
+              <div class="m-3 shadow p-3 w-100 feature-box d-flex align-items-center FEATURES-chake">
+                <i class="bi bi-check h4 text-dark p-2 cbglw rounded pt-1 pb-1 m-0"></i>
+                <div class="ctc1 fw-bolder h6 p-0 ms-2 m-0">
+                  Rerum omnis sint
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100">
+              <div class="m-3 shadow p-3 w-100 feature-box d-flex align-items-center FEATURES-chake">
+                <i class="bi bi-check h4 text-dark p-2 cbglw rounded pt-1 pb-1 m-0"></i>
+                <div class="ctc1 fw-bolder h6 p-0 ms-2 m-0">
+                  Alias possimus
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300">
+              <div class="m-3 shadow p-3 w-100 feature-box d-flex align-items-center FEATURES-chake">
+                <i class="bi bi-check h4 text-dark p-2 cbglw rounded pt-1 pb-1 m-0"></i>
+                <div class="ctc1 fw-bolder h6 p-0 ms-2 m-0">
+                  Repellendus mollitia
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-6 mt-5 pt-5">
+    <div class="container row m-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      <div class="col-lg-6 col-12">
+        <div class="w-100 lh-1 ctc1 fw-bolder h2">
+          Neque officiis dolore maiores et exercitationem quae est seda lidera
+          pat claero
+        </div>
+        <div class="w-100 d-flex align-items-center">
+          <div class="active p-1 p-sm-3" id="data1">SAEPE FUGA</div>
+          <div class="p-1 p-sm-3" id="data2">VOLUPTATES</div>
+          <div class="p-1 p-sm-3" id="data3">CORRUPTI</div>
+        </div>
+
+        <div class="w-100">
+          <div id="tab1">
+            <p class="text-muted">
+              pag1 Consequuntur inventore voluptates consequatur aut vel et.
+              Eos doloribus expedita. Sapiente atque consequatur minima nihil
+              quae aspernatur quo suscipit voluptatem.
+            </p>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-check2 ctc2 h4"></i>
+              <h4 class="ms-1">
+                Repudiandae rerum velit modi et officia quasi facilis
+              </h4>
+            </div>
+            <p class="text-muted">
+              Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+              Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+              et.
+            </p>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-check2 ctc2 h4"></i>
+              <h4 class="ms-1">Incidunt non veritatis illum ea ut nisi</h4>
+            </div>
+            <p class="text-muted">
+              Non quod totam minus repellendus autem sint velit. Rerum debitis
+              facere soluta tenetur. Iure molestiae assumenda sunt qui
+              inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia
+              et perferendis.
+            </p>
+          </div>
+
+          <div id="tab2">
+            <p class="text-muted">
+              pag2 Consequuntur inventore voluptates consequatur aut vel et.
+              Eos doloribus expedita. Sapiente atque consequatur minima nihil
+              quae aspernatur quo suscipit voluptatem.
+            </p>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-check2 ctc2 h4"></i>
+              <h4 class="ms-1">
+                Repudiandae rerum velit modi et officia quasi facilis
+              </h4>
+            </div>
+            <p class="text-muted">
+              Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+              Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+              et.
+            </p>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-check2 ctc2 h4"></i>
+              <h4 class="ms-1">Incidunt non veritatis illum ea ut nisi</h4>
+            </div>
+            <p class="text-muted">
+              Non quod totam minus repellendus autem sint velit. Rerum debitis
+              facere soluta tenetur. Iure molestiae assumenda sunt qui
+              inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia
+              et perferendis.
+            </p>
+          </div>
+
+          <div id="tab3">
+            <p class="text-muted">
+              pag3 Consequuntur inventore voluptates consequatur aut vel et.
+              Eos doloribus expedita. Sapiente atque consequatur minima nihil
+              quae aspernatur quo suscipit voluptatem.
+            </p>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-check2 ctc2 h4"></i>
+              <h4 class="ms-1">
+                Repudiandae rerum velit modi et officia quasi facilis
+              </h4>
+            </div>
+            <p class="text-muted">
+              Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+              Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+              et.
+            </p>
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-check2 ctc2 h4"></i>
+              <h4 class="ms-1">Incidunt non veritatis illum ea ut nisi</h4>
+            </div>
+            <p class="text-muted">
+              Non quod totam minus repellendus autem sint velit. Rerum debitis
+              facere soluta tenetur. Iure molestiae assumenda sunt qui
+              inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia
+              et perferendis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/features-2.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="section-7 w-100 mt-5">
+    <div class="container">
+      <div class="w-100 text-center h2 ctc1 fw-bolder" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        Ratione mollitia eos ab laudantium rerum beatae quo
+      </div>
+      <div class="w-100 row m-auto mt-3 mt-xl-5">
+        <div class="col-12 col-xl-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+          <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/features-3.png"
+            alt="" />
+        </div>
+        <div class="col-12 col-xl-9 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-12 col-lg-6 ps-5 mt-3 mb-3 d-flex" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="100">
+              <i class="fa-solid fa-chart-line h1 ctc2"></i>
+              <div class="ms-3">
+                <div class="h5 ctc1 fw-bold">Corporis voluptates sit</div>
+                <div class="text-muted h6">
+                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                  laboris nisi ut aliquip
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-5 mt-3 mb-3 d-flex" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="300">
+              <i class="fa-solid fa-layer-group h1 ctc2"></i>
+              <div class="ms-3">
+                <div class="h5 ctc1 fw-bold">Ullamco laboris nisi</div>
+                <div class="text-muted h6">
+                  Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-5 mt-3 mb-3 d-flex" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="100">
+              <i class="fa-solid fa-brush h1 ctc2"></i>
+
+              <div class="ms-3">
+                <div class="h5 ctc1 fw-bold">Labore consequatur</div>
+                <div class="text-muted h6">
+                  Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                  maiores omnis facere
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-5 mt-3 mb-3 d-flex" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="300">
+              <i class="fa-solid fa-wand-magic-sparkles h1 ctc2"></i>
+
+              <div class="ms-3">
+                <div class="h5 ctc1 fw-bold">Beatae veritatis</div>
+                <div class="text-muted h6">
+                  Expedita veritatis consequuntur nihil tempore laudantium
+                  vitae denat pacta
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-5 mt-3 mb-3 d-flex" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="100">
+              <i class="bi bi-command h1 ctc2"></i>
+              <div class="ms-3">
+                <div class="h5 ctc1 fw-bold">Molestiae dolor</div>
+                <div class="text-muted h6">
+                  Et fuga et deserunt et enim. Dolorem architecto ratione
+                  tensa raptor marte
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 ps-5 mt-3 mb-3 d-flex " data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="300">
+              <i class="fa-solid fa-satellite-dish h1 ctc2"></i>
+              <div class="ms-3">
+                <div class="h5 ctc1 fw-bold">Explicabo consectetur</div>
+                <div class="text-muted h6">
+                  Est autem dicta beatae suscipit. Sint veritatis et sit quasi
+                  ab aut inventore
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="servics" class="section-8 w-100 pt-5">
+    <div class="container mt-5">
+      <div class="w-100 text-center ctc2 fw-light h6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        SERVICES</div>
+      <div class="w-100 text-center fw-bolder h1 ctc1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        Veritatis et dolores facere numquam et praesentium
+      </div>
+      <div class="w-100 row m-auto">
+        <div class="col-12 p-4 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="w-100 h-100 shadow text-center pt-5 pb-5 card" style="transition: 0.3s"
+            onmouseover="this.style.backgroundColor='#0D6EFD' " onmouseout="this.style.backgroundColor='white'">
+            <div class="w-100">
+              <i class="fa-regular fa-message h1 text-primary"></i>
+            </div>
+            <div class="text-center h3 fw-bolder mt-3 mb-3">
+              Nesciunt Mete
+            </div>
+            <div class="text-center ps-3 pe-3">
+              Provident nihil minus qui consequatur non omnis maiores. Eos
+              accusantium minus dolores iure perferendis tempore et
+              consequatur.
+            </div>
+            <div class="ctc2 ps-5 pe-5 pt-2 pb-2 text-capitalize h6 text-center mt-4">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 p-4 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="w-100 h-100 shadow text-center pt-5 pb-5 card" style="transition: 0.3s"
+            onmouseover="this.style.backgroundColor='#f68c09' " onmouseout="this.style.backgroundColor='white'">
+            <div class="w-100">
+              <i class="fa-regular fa-message h1 text-warning"></i>
+            </div>
+            <div class="text-center h3 fw-bolder mt-3 mb-3">
+              Eosle Commodi
+            </div>
+            <div class="text-center ps-3 pe-3">
+              Ut autem aut autem non a. Sint sint sit facilis nam iusto sint.
+              Libero corrupti neque eum hic non ut nesciunt dolorem.
+            </div>
+            <div class="text-warning ps-5 pe-5 pt-2 pb-2 text-capitalize h6 text-center mt-4">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-4 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="w-100 h-100 shadow text-center pt-5 pb-5 card" style="transition: 0.3s"
+            onmouseover="this.style.backgroundColor='#08da4e' " onmouseout="this.style.backgroundColor='white'">
+            <div class="w-100">
+              <i class="fa-regular fa-message h1 text-success"></i>
+            </div>
+            <div class="text-center h3 fw-bolder mt-3 mb-3">Ledo Markt</div>
+            <div class="text-center ps-3 pe-3">
+              Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus
+              ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+            </div>
+            <div class="text-success ps-5 pe-5 pt-2 pb-2 text-capitalize h6 text-center mt-4">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-4 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="w-100 h-100 shadow text-center pt-5 pb-5 card" style="transition: 0.3s"
+            onmouseover="this.style.backgroundColor='#e9222c' " onmouseout="this.style.backgroundColor='white'">
+            <div class="w-100">
+              <i class="fa-regular fa-message h1 text-danger"></i>
+            </div>
+            <div class="text-center h3 fw-bolder mt-3 mb-3">
+              Asperiores Commodi
+            </div>
+            <div class="text-center ps-3 pe-3">
+              Non et temporibus minus omnis sed dolor esse consequatur.
+              Cupiditate sed error ea fuga sit provident adipisci neque.
+            </div>
+            <div class="text-danger ps-5 pe-5 pt-2 pb-2 text-capitalize h6 text-center mt-4">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-4 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="w-100 h-100 shadow text-center pt-5 pb-5 card" style="transition: 0.3s"
+            onmouseover="this.style.backgroundColor='#0dcaf0' " onmouseout="this.style.backgroundColor='white'">
+            <div class="w-100">
+              <i class="fa-regular fa-message h1 text-info"></i>
+            </div>
+            <div class="text-center h3 fw-bolder mt-3 mb-3">
+              Velit Doloremque.
+            </div>
+            <div class="text-center ps-3 pe-3">
+              Cumque et suscipit saepe. Est maiores autem enim facilis ut aut
+              ipsam corporis aut. Sed animi at autem alias eius labore.
+            </div>
+            <div class="text-info ps-5 pe-5 pt-2 pb-2 text-capitalize h6 text-center mt-4">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 p-4 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="w-100 h-100 shadow text-center pt-5 pb-5 card" style="transition: 0.3s"
+            onmouseover="this.style.backgroundColor='#012970 ' " onmouseout="this.style.backgroundColor='white'">
+            <div class="w-100">
+              <i class="fa-regular fa-message h1 ctc1"></i>
+            </div>
+            <div class="text-center h3 fw-bolder mt-3 mb-3">
+              Dolori Architecto
+            </div>
+            <div class="text-center ps-3 pe-3">
+              Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque
+              non et debitis iure. Corrupti recusandae ducimus enim.
+            </div>
+            <div class="ctc1 ps-5 pe-5 pt-2 pb-2 text-capitalize h6 text-center mt-4">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-9 w-100 pt-5 mt-5">
+    <div class="container">
+      <div class="w-100 text-center ctc2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">PRICING</div>
+      <div class="w-100 text-center ctc1 h1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Check our
+        Pricing</div>
+      <div class="w-100 row m-auto">
+        <div class="col-12 col-md-6 col-lg-3 ps-3 pe-3 pt-5 pb-5" data-aos="zoom-in" data-aos-duration="1000"
+          data-aos-delay="100">
+          <div class="w-100 shadow scal">
+            <div class="w-100 text-center text-info fw-bolder h6">
+              Free Plan
+            </div>
+            <div class="w-100 text-center fw-bolder h2 mt-4">
+              <sup class="">$</sup>0<span class="text-muted h5"> / mo</span>
+            </div>
+            <div class="w-100 d-flex justify-content-center mt-4 mb-4">
+              <img class="w-75" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/pricing-free.png"
+                alt="" />
+            </div>
+            <div class="w-100">
+              <div class="w-100 text-center mt-2">Aida dere</div>
+              <div class="w-100 text-center mt-2">Nec feugiat nisl</div>
+              <div class="w-100 text-center mt-2">Nulla at volutpat dola</div>
+              <div class="text-decoration-line-through mt-2 w-100 text-center text-muted">
+                Pharetra massa
+              </div>
+              <div class="text-decoration-line-through mt-2 w-100 text-center text-muted">
+                Massa ultricies mi
+              </div>
+              <div class="w-100 d-flex justify-content-center mt-5">
+                <button type="button"
+                  class="mb-3 btn btn-outline-primary rounded text-capitalize rounded-pill ps-5 pe-5">
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 ps-3 pe-3 pt-5 pb-5" data-aos="zoom-in" data-aos-duration="1000"
+          data-aos-delay="100">
+          <div class="w-100 shadow scal">
+            <div class="w-100 text-center text-success fw-bolder h6">
+              Starter Plan
+            </div>
+            <div class="w-100 text-center fw-bolder h2 mt-4">
+              <sup class="">$</sup>19<span class="text-muted h5"> / mo</span>
+            </div>
+            <div class="w-100 d-flex justify-content-center mt-4 mb-4">
+              <img class="w-75" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/pricing-starter.png"
+                alt="" />
+            </div>
+            <div class="w-100">
+              <div class="w-100 text-center mt-2">Aida dere</div>
+              <div class="w-100 text-center mt-2">Nec feugiat nisl</div>
+              <div class="w-100 text-center mt-2">Nulla at volutpat dola</div>
+              <div class="mt-2 w-100 text-center">Pharetra massa</div>
+              <div class="text-decoration-line-through mt-2 w-100 text-center text-muted">
+                Massa ultricies mi
+              </div>
+              <div class="w-100 d-flex justify-content-center mt-5">
+                <button type="button"
+                  class="mb-3 btn btn-outline-primary rounded text-capitalize rounded-pill ps-5 pe-5">
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 ps-3 pe-3 pt-5 pb-5" data-aos="zoom-in" data-aos-duration="1000"
+          data-aos-delay="100">
+          <div class="w-100 shadow scal">
+            <div class="w-100 text-center text-warning fw-bolder h6">
+              Business Plan
+            </div>
+            <div class="w-100 text-center fw-bolder h2 mt-4">
+              <sup class="">$</sup>29<span class="text-muted h5"> / mo</span>
+            </div>
+            <div class="w-100 d-flex justify-content-center mt-4 mb-4">
+              <img class="w-75" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/pricing-business.png"
+                alt="" />
+            </div>
+            <div class="w-100">
+              <div class="w-100 text-center mt-2">Aida dere</div>
+              <div class="w-100 text-center mt-2">Nec feugiat nisl</div>
+              <div class="w-100 text-center mt-2">Nulla at volutpat dola</div>
+              <div class="text-decoration-line-through mt-2 w-100 text-center text-muted">
+                Pharetra massa
+              </div>
+              <div class="text-decoration-line-through mt-2 w-100 text-center text-muted">
+                Massa ultricies mi
+              </div>
+              <div class="w-100 d-flex justify-content-center mt-5">
+                <button type="button"
+                  class="mb-3 btn btn-outline-primary rounded text-capitalize rounded-pill ps-5 pe-5">
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 ps-3 pe-3 pt-5 pb-5" data-aos="zoom-in" data-aos-duration="1000"
+          data-aos-delay="100">
+          <div class="w-100 shadow scal">
+            <div class="w-100 text-center text-danger fw-bolder h6">
+              Ultimate Plan
+            </div>
+            <div class="w-100 text-center fw-bolder h2 mt-4">
+              <sup class="">$</sup>49<span class="text-muted h5"> / mo</span>
+            </div>
+            <div class="w-100 d-flex justify-content-center mt-4 mb-4">
+              <img class="w-75" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/pricing-ultimate.png"
+                alt="" />
+            </div>
+            <div class="w-100">
+              <div class="w-100 text-center mt-2">Aida dere</div>
+              <div class="w-100 text-center mt-2">Nec feugiat nisl</div>
+              <div class="w-100 text-center mt-2">Nulla at volutpat dola</div>
+              <div class="text-decoration-line-through mt-2 w-100 text-center text-muted">
+                Pharetra massa
+              </div>
+              <div class="text-decoration-line-through mt-2 w-100 text-center text-muted">
+                Massa ultricies mi
+              </div>
+              <div class="w-100 d-flex justify-content-center mt-5">
+                <button type="button"
+                  class="mb-3 btn btn-outline-primary rounded text-capitalize rounded-pill ps-5 pe-5">
+                  buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-10 mt-3 mb-4">
+    <div class="container pt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <div class="w-100 text-center ctc2">F.A.Q</div>
+      <div class="w-100 text-center ctc1 h1">Frequently Asked Questions</div>
+      <div class="w-100 row">
+        <div class="accordion accordion-flush row" id="accordionFlushExample">
+          <div class="accordion col-12 col-lg-6" id="accordionExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Non consectetur a erat nam at lectus urna duis?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </div>
+              </div>
+            </div>
+
+            <!-- New accordion item #2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                  ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </div>
+              </div>
+            </div>
+
+            <!-- New accordion item #3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+                  integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+                  Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi
+                  quis
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="accordion col-12 col-lg-6" id="accordionExample">
+            <!-- New accordion item #4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                  ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </div>
+              </div>
+            </div>
+
+            <!-- New accordion item #5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
+                  vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
+                  gravida quis blandit turpis cursus in
+                </div>
+              </div>
+            </div>
+
+            <!-- New accordion item #6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Varius vel pharetra vel turpis nunc eget lorem dolor?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
+                  nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
+                  tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas
+                  fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <div class="w-100 p-3" id="PORTFOLIO"></div>
+  <section class="section-11 w-100 mt-5 ">
+    <div class="container">
+      <div class="w-100 text-center ctc2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">PORTFOLIO
+      </div>
+      <div class="w-100 text-center ctc1 h1 fw-bolder" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        Check our latest work
+      </div>
+      <div class="w-100 mt-5">
+        <div id="myBtnContainer" class="w-100 d-flex justify-content-center align-items-center m-auto">
+          <button class="btn btn-outline-success activecard m-1" onclick="filterSelection('all')" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="100"> Show all</button>
+          <button class="btn btn-outline-success m-1" onclick="filterSelection('app')" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="100"> app</button>
+          <button class="btn btn-outline-success m-1" onclick="filterSelection('web')" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="100"> web</button>
+          <button class="btn btn-outline-success m-1" onclick="filterSelection('datacard')" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-delay="100">card</button>
+        </div>
+        <div class="w-100 row mt-4 m-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="filterDiv app col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-1.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              app
+            </div>
+          </div>
+          <div class="filterDiv web col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-2.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              web
+            </div>
+          </div>
+          <div class="filterDiv app col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-3.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              app
+            </div>
+          </div>
+          <div class="filterDiv datacard col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-4.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              card
+            </div>
+          </div>
+          <div class="filterDiv web col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-5.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              web
+            </div>
+          </div>
+          <div class="filterDiv app col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-6.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              app
+            </div>
+          </div>
+          <div class="filterDiv datacard  col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-7.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              card
+            </div>
+          </div>
+          <div class="filterDiv datacard col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-8.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              card
+            </div>
+          </div>
+          <div class="filterDiv web col-12 col-md-6 col-xl-4 p-3">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/portfolio/portfolio-9.jpg"
+                class="w-100" alt="">
+            </div>
+            <div class="h5 bg-success text-light fw-bolder text-center w-100 p-2 mt-1">
+              web
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-12 w-100 mt-5 pt-5">
+    <div class="container">
+      <div class="w-100 text-center  ctc2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">TESTIMONIALS
+      </div>
+      <div class="w-100 text-center ctc1 h1 fw-bolder" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        What they are saying about us
+      </div>
+      <div class="swiper mt-5 mySwiper w-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="h-100 swiper-wrapper">
+          <div class="h-100 swiper-slide p-3">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center flex-column shadow">
+              <div class="mt-3">
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+              </div>
+              <div class="w-100 p-3 text-center">
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              </div>
+              <div class="w-25 rounded-circle overflow-hidden">
+                <img class="w-100"
+                  src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/testimonials/testimonials-2.jpg"
+                  alt="">
+              </div>
+              <div class="h5 fw-bolder mt-3">
+                Sara Wilsson
+              </div>
+              <div class="h6 text-muted mb-3">Designer</div>
+            </div>
+          </div>
+
+          <div class="h-100 swiper-slide p-3">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center flex-column shadow">
+              <div class="mt-3">
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+              </div>
+              <div class="w-100 p-3 text-center">
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
+                labore quem eram duis noster aute amet eram fore quis sint minim.
+              </div>
+              <div class="w-25 rounded-circle overflow-hidden">
+                <img class="w-100"
+                  src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/testimonials/testimonials-3.jpg"
+                  alt="">
+              </div>
+              <div class="h5 fw-bolder mt-3">
+                Jena Karlis
+              </div>
+              <div class="h6 text-muted mb-3">Store Owner</div>
+            </div>
+          </div>
+
+          <div class="h-100 swiper-slide p-3">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center flex-column shadow">
+              <div class="mt-3">
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+              </div>
+              <div class="w-100 p-3 text-center">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
+                dolor enim duis veniam ipsum anim magna sunt fore quem labore illum veniam.
+              </div>
+              <div class="w-25 rounded-circle overflow-hidden">
+                <img class="w-100"
+                  src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/testimonials/testimonials-4.jpg"
+                  alt="">
+              </div>
+              <div class="h5 fw-bolder mt-3">
+                Matt Brandon
+              </div>
+              <div class="h6 text-muted mb-3">Freelancer</div>
+            </div>
+          </div>
+
+          <div class="h-100 swiper-slide p-3">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center flex-column shadow">
+              <div class="mt-3">
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+              </div>
+              <div class="w-100 p-3  text-center">
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                labore duis nulla illum cillum fugiat legam esse veniam culpa cillum quid.
+              </div>
+              <div class="w-25 rounded-circle overflow-hidden">
+                <img class="w-100"
+                  src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/testimonials/testimonials-5.jpg"
+                  alt="">
+              </div>
+              <div class="h5 fw-bolder mt-3">
+                John Larson
+              </div>
+              <div class="h6 text-muted mb-3">Entrepreneur</div>
+            </div>
+          </div>
+
+          <div class="h-100 swiper-slide p-3">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center flex-column shadow">
+              <div class="mt-3">
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+                <i class="fa-solid fa-star text-warning h5"></i>
+              </div>
+              <div class="w-100 p-3 text-center">
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              </div>
+              <div class="w-25 rounded-circle overflow-hidden">
+                <img class="w-100"
+                  src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/testimonials/testimonials-1.jpg"
+                  alt="">
+              </div>
+              <div class="h5 fw-bolder mt-3">
+                Saul Goodman
+              </div>
+              <div class="h6 text-muted mb-3">Ceo & Founder</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination position-relative mt-3"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="team" class="section-13 w-100 pt-5 mb-5">
+    <div class="container mt-5">
+      <div class="w-100 text-center  ctc2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">TEAM</div>
+      <div class="w-100 text-center ctc1 h1 fw-bolder" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        Our hard working team
+      </div>
+      <div class="w-100">
+        <div class="w-100 row m-auto">
+          <div class="col-12 col-md-6 col-lg-3 p-3 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="scal w-100 shadow pb-3">
+              <div class="position-relative">
+                <div class="w-100">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team/team-1.jpg"
+                    alt="">
+                </div>
+                <div class="w-100 position-absolute bottom-0 start-0">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team-shape.svg"
+                    alt="">
+                </div>
+              </div>
+              <div class="w-100 text-center ctc1 fw-bolder h5">Walter White</div>
+              <div class="text-center text-muted h6">
+                Chief Executive Officer
+              </div>
+              <p class="fst-italic cfs-14 p-3 text-center">
+                Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem
+                iure minima enim corporis et voluptate.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-3 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="scal w-100 shadow pb-3">
+              <div class="position-relative">
+                <div class="w-100">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team/team-2.jpg"
+                    alt="">
+                </div>
+                <div class="w-100 position-absolute bottom-0 start-0">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team-shape.svg"
+                    alt="">
+                </div>
+              </div>
+              <div class="w-100 text-center ctc1 fw-bolder h5">Sarah Jhonson</div>
+              <div class="text-center text-muted h6">
+                Product Manager
+              </div>
+              <p class="fst-italic cfs-14 p-3 text-center">
+                Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis.
+                Voluptate sed quas reiciendis animi neque sapiente. </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-3 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="scal w-100 shadow pb-3">
+              <div class="position-relative">
+                <div class="w-100">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team/team-3.jpg"
+                    alt="">
+                </div>
+                <div class="w-100 position-absolute bottom-0 start-0">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team-shape.svg"
+                    alt="">
+                </div>
+              </div>
+              <div class="w-100 text-center ctc1 fw-bolder h5">William Anderson</div>
+              <div class="text-center text-muted h6">
+                cto
+              </div>
+              <p class="fst-italic cfs-14 p-3 text-center">
+                Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut
+                architecto porro aspernatur molestiae modi.
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-3 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+            <div class="scal w-100 shadow pb-3">
+              <div class="position-relative">
+                <div class="w-100">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team/team-4.jpg"
+                    alt="">
+                </div>
+                <div class="w-100 position-absolute bottom-0 start-0">
+                  <img class="w-100" src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team-shape.svg"
+                    alt="">
+                </div>
+              </div>
+              <div class="w-100 text-center ctc1 fw-bolder h5">Amanda Jepson</div>
+              <div class="text-center text-muted h6">
+                Accountant
+              </div>
+              <p class="fst-italic cfs-14 p-3 text-center ">
+                Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut
+                possimus ipsum officia. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-13 w-100 mt-5 pt-5 mb-5">
+    <div class="container">
+      <div class="w-100 text-center  ctc2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">OUR CLIENTS
+      </div>
+      <div class="w-100 text-center ctc1 h1 fw-bolder mb-5" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-delay="100">
+        Temporibus omnis officia
+      </div>
+      <div class="w-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper" style="height: 70px;">
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-1.png" alt=""></div>
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-2.png" alt=""></div>
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-3.png" alt=""></div>
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-4.png" alt=""></div>
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-5.png" alt=""></div>
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-6.png" alt=""></div>
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-7.png" alt=""></div>
+            <div class="swiper-slide d-flex"><img class="w-50 m-auto mt-0"
+                src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/clients/client-8.png" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="BLOG" class="section-13 w-100 mt-5 pt-5 mb-5">
+    <div class="container">
+      <div class="w-100 text-center  ctc2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">BLOG</div>
+      <div class="w-100 text-center ctc1 h1 fw-bolder mb-5" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-delay="200">
+        Recent posts form our Blog
+      </div>
+      <div class="w-100 row m-auto">
+        <div class="col-12 col-lg-4 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="w-100 h-100 shadow rounded-3 overflow-hidden d-flex justify-content-center flex-column c-img-r">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/blog/blog-1.jpg" alt=""
+                class="w-100">
+            </div>
+            <div class="w-75 m-auto text-muted mt-2 mb-0">
+              Tue, September 15
+            </div>
+            <div class="w-75 m-auto mb-0 h4 mt-4">
+              Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit
+            </div>
+            <div class="ctc2 w-75 m-auto mb-3 fw-bolder pt-4 pb-2 text-capitalize h6  mt-auto">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="w-100 h-100 shadow rounded-3 overflow-hidden d-flex justify-content-center flex-column c-img-r">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/blog/blog-2.jpg" alt=""
+                class="w-100">
+            </div>
+            <div class="w-75 m-auto text-muted mt-2 mb-0">
+              Fri, August 28
+            </div>
+            <div class="w-75 m-auto mb-0 h4 mt-4">
+              Et repellendus molestiae qui est sed omnis voluptates magnam </div>
+            <div class="ctc2 w-75 m-auto mb-3 fw-bolder pt-4 pb-2 text-capitalize h6  mt-auto ">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="w-100 h-100 shadow rounded-3 overflow-hidden d-flex justify-content-center flex-column c-img-r">
+            <div class="w-100 overflow-hidden">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/blog/blog-3.jpg" alt=""
+                class="w-100">
+            </div>
+            <div class="w-75 m-auto text-muted mt-2 mb-0">
+              Mon, July 11
+            </div>
+            <div class="w-75 m-auto mb-0 h4 mt-4">
+              Quia assumenda est et veritatis aut quae</div>
+            <div class="ctc2 w-75 m-auto mb-3 fw-bolder pt-4 pb-2 text-capitalize h6  mt-auto">
+              read more
+              <i class="fa-solid fa-arrow-right ms-1"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section-14 w-100">
+    <div class="container">
+      <div class="w-100 text-center  ctc2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">CONTACT
+      </div>
+      <div class="w-100 text-center ctc1 h1 fw-bolder mb-5" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-delay="300">
+        Contact Us
+      </div>
+      <div class="row w-100 m-auto overflow-hidden">
+        <div class="col-12 col-lg-6 p-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+          <div class="w-100 row m-auto">
+            <div class="col-12  col-md-6 p-2">
+              <div class="ghostwhite w-100 p-3">
+                <div class="w-100">
+                  <i class="bi bi-geo-alt h1 ctc2"></i>
+                </div>
+                <div class="w-100 mt-2 fw-bold h4">Address</div>
+                <div class="w-100 mt-3 mb-3">
+                  A108 Adam Street,
+                  <br>
+                  New York, NY 535022
+                </div>
+              </div>
+            </div>
+            <div class="col-12  col-md-6 p-2">
+              <div class="ghostwhite w-100 p-3">
+                <div class="w-100">
+                  <i class="bi bi-geo-alt h1 ctc2"></i>
+                </div>
+                <div class="w-100 mt-2 fw-bold h4">Address</div>
+                <div class="w-100 mt-3 mb-3">
+                  A108 Adam Street,
+                  <br>
+                  New York, NY 535022
+                </div>
+              </div>
+            </div>
+            <div class="col-12  col-md-6 p-2">
+              <div class="ghostwhite w-100 p-3">
+                <div class="w-100">
+                  <i class="bi bi-geo-alt h1 ctc2"></i>
+                </div>
+                <div class="w-100 mt-2 fw-bold h4">Address</div>
+                <div class="w-100 mt-3 mb-3">
+                  A108 Adam Street,
+                  <br>
+                  New York, NY 535022
+                </div>
+              </div>
+            </div>
+            <div class="col-12  col-md-6 p-2">
+              <div class="ghostwhite w-100 p-3">
+                <div class="w-100">
+                  <i class="bi bi-geo-alt h1 ctc2"></i>
+                </div>
+                <div class="w-100 mt-2 fw-bold h4">Address</div>
+                <div class="w-100 mt-3 mb-3">
+                  A108 Adam Street,
+                  <br>
+                  New York, NY 535022
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <form class="h-100">
+            <div class="w-100 row ghostwhite h-100 m-auto">
+              <div class="col-12 col-md-6 mt-3 cinputbox">
+                <input type="text" class="w-100 p-2" required placeholder="Your Name">
+              </div>
+              <div class="col-12 col-md-6 mt-3 cinputbox">
+                <input type="text" class="w-100 p-2 " required placeholder="Your Email">
+              </div>
+              <div class="col-12 mt-3 cinputbox">
+                <input type="text" class="w-100 p-2 " required placeholder="Subject">
+              </div>
+              <div class="col-12 mt-3 cinputbox">
+                <textarea name="message" class="w-100" required placeholder="Message" rows="6"></textarea>
+              </div>
+              <div class="col-12 d-flex mt-4 mb-auto justify-content-center">
+                <button type="submit" class="btn cbgc2 text-light p-2 ps-3 pe-3">
+                  Send massage
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="w-100">
+
+    <div class="w-100 mt-3 ghostwhite pb-4">
+      <div class="container p-3 pb-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4 class="mt-2">Our Newsletter</h4>
+            <p class="mt-2">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6 mt-2">
+            <form class="w-100 position-relative" method="post">
+              <input type="email" class="w-100 position-absolute top-0 start-0 p-2 border-1" name="email">
+              <input type="submit"
+                class="position-absolute end-0 top-0 p-2 ps-3 pe-3 rounded-3 cbgc2 text-light border-0"
+                value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 footer-img" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+      <div class="container mt-5">
+        <div class="row gy-4 w-100 m-auto">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none h3">
+              <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/logo.png" alt="">
+              <span class="ctc1 ">FlexStart</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+              darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="text-muted h5"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-muted h5 ms-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-muted h5 ms-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-muted h5 ms-2"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-12"></div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul class="p-0">
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul class="p-0">
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#" class="ctc1">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="w-100 ghostwhite">
+      <div class="container p-4">
+        <div class="text-center">
+          © Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+        </div>
+        <div class="text-center mt-2">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./gotop.js"></script>
+  <script src="tab.js"></script>
+  <script src="filter.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+
+    function size() {
+      var swiper = new Swiper(".mySwiper", {
+        watchSlidesProgress: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: (window.innerWidth >= 1200) ? 3 : 1,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    }
+    size();
+    window.addEventListener('resize', size);
+
+    function size2() {
+      var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: (window.innerWidth < 480) ? 2 : (window.innerWidth < 639) ? 3 : (window.innerWidth >= 1200) ? 6 : 4,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        freeMode: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+    size2();
+    window.addEventListener('resize', size2);
+
+
+  </script>
+  <!-- data aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+
+</html>

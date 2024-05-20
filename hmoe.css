@@ -1,0 +1,169 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+:root {
+  --c1: #012970;
+  --c2: #4154f1;
+  --c3: #ecf3ff;
+}
+
+.ctc1 {
+  color: var(--c1) !important;
+}
+
+.cfs-14 {
+  font-size: 14px;
+}
+
+.cbglw {
+  background-color: var(--c3);
+}
+
+.ctc2 {
+  color: var(--c2) !important;
+}
+
+.cbgc1 {
+  background-color: var(--c1) !important;
+}
+
+.cbgc2 {
+  background-color: var(--c2) !important;
+}
+
+.active {
+  color: var(--c2) !important;
+}
+
+.FEATURES-chake:hover>i {
+  background: #4154f1;
+  color: #fff !important;
+  transition: .5s;
+}
+
+.card:hover>div,
+.card:hover>div:first-child>i {
+  color: white !important;
+}
+
+.section-1 {
+  /* margin-top: 60px; */
+  background-image: url(https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.activecard {
+  background-color: green;
+  color: white;
+}
+
+.ghostwhite {
+  background-color: ghostwhite;
+}
+
+.scal {
+  transition: transform .5s;
+}
+
+.scal:hover {
+  transform: scale(1.1);
+}
+
+.filterDiv {
+  display: none !important;
+}
+
+.filterDiv>div>img {
+  transition: transform .8s;
+}
+
+.filterDiv:hover>div>img {
+  transform: scale(1.1);
+}
+
+.show {
+  display: block !important;
+}
+
+.gotop {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.362);
+}
+
+#btn-gotop.hidden {
+  display: none !important;
+}
+
+.swiper-slide-visible {
+  opacity: .5;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .swiper-slide-visible {
+    opacity: 1 !important;
+  }
+}
+
+
+.swiper-slide-next {
+  opacity: 1;
+  transform: scale(1.05) !important;
+}
+
+
+@media screen and (min-width: 992px) {
+  .section-1 {
+    height: 100vh;
+  }
+}
+
+.c-img-r>div>img {
+  transition: transform .5s;
+}
+
+.c-img-r:hover>div>img {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.cinputbox>* {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.cinputbox>*:focus-visible {
+  border: 1px solid #4154F1 !important;
+  outline: 0px !important;
+}
+
+.cinputbox>*:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.footer-img {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-image: url(https://bootstrapmade.com/demo/templates/FlexStart/assets/img/footer-bg.png) ;
+}
